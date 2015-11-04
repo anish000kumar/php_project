@@ -1,0 +1,30 @@
+{% extends "layout.phtml" %}
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block content %} 
+
+<h1 class="well">Welcome Abroad!</h1>
+
+<div class="panel panel-info">
+	  <div class="panel-heading">
+			<h3 class="panel-title">{{name}}</h3>
+	  </div>
+	  <div class="panel-body">
+			<div class="col-sm-4">
+				<img src={{imageUrl}}>
+			</div>
+			<div class="col-sm-8">
+				<ul class="list-unstyled">
+					<li>Name: {{name}}</li>
+					<li>Email : {{email}}</li>
+					<li>ID : {{id}}</li>
+				</ul>
+			</div>
+	  </div>
+</div>
+
+
+{% endblock %}
